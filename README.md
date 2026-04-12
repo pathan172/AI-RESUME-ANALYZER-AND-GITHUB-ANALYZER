@@ -95,8 +95,14 @@
 3. 🤖 **AI Optimization Engine:**  
    - 💡 Keyword Highlighting  
    - ✍️ Content Enhancement Tips  
-   - 🌟 Industry-Specific Insights  
+   - 🌟 Industry-Specific Insights
+     
+4.- **GITHUB Analyzer:**
+   - Repo count
+   - stars count
+   - check github sore
 
+     
 **🎉 Why Use Smart Resume AI?**  
 Get real-time feedback, boost your resume's impact, and maximize your chances of getting shortlisted—all with a sleek and intuitive interface.  
 
