@@ -1,0 +1,3 @@
+[submodule "github-profile-analyzer"]
+	path = github-profile-analyzer
+	url = https://github.com/0xarchit/github-profile-analyzer.git
