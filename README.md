@@ -603,7 +603,7 @@ Explore the code, contribute, or drop a <img src="https://github.com/user-attach
 ## 🛡️ Maintainer  
 
 > **_This repository is maintained by [Washim629](https://github.com/Washim629/AI-resume-Analyzer)._**  
-> Have suggestions? Feel free to reach out to [me via email](mailto:het8185@gmail.com). 📧
+> Have suggestions? Feel free to reach out to [me via email](mailto:anzark2914@gmail.com). 📧
 
 
 ## 📰 News  
