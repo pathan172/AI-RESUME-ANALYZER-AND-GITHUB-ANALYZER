@@ -1463,6 +1463,7 @@ class ResumeApp:
                                 file_name=f"{current_name.replace(' ', '_')}_resume.docx",
                                  mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                                  on_click=lambda: st.balloons()
+                           )
                                                  
                            
         
