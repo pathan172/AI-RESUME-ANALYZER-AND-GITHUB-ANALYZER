@@ -1431,6 +1431,7 @@ class ResumeApp:
                     # Generate resume
                     resume_buffer = self.builder.generate_resume(resume_data)
                     if resume_buffer:
+                        
                        try:
     # Save resume data to database
                            save_resume_data(resume_data)
@@ -1448,12 +1449,15 @@ class ResumeApp:
                                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                                on_click=lambda: st.balloons()
                            )
+                       except Exception as db_error:
+                           print(f"Warning: Failed to save to database: {str(db_error)}")
+                           st.warning(
+                               "⚠️ Resume generated but couldn't be saved to database"
+                           )
                            
-                        except Exception as db_error:
-                               print(f"Warning: Failed to save to database: {str(db_error)}")
-                               st.warning(
-        "⚠️ Resume generated but couldn't be saved to database"
-    )
+                           
+                               
+                             
     # Show balloons effect
     st.balloons()
 
