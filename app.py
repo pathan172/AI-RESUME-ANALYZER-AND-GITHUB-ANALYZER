@@ -1431,7 +1431,7 @@ class ResumeApp:
                     # Generate resume
                     resume_buffer = self.builder.generate_resume(resume_data)
                     if resume_buffer:
-                       try
+                       try:
     # Save resume data to database
                            save_resume_data(resume_data)
 
