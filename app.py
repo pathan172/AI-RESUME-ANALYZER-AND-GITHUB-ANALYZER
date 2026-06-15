@@ -21,7 +21,7 @@ import base64
 import plotly.graph_objects as go
 from streamlit_lottie import st_lottie
 import requests
-from dashboard.dashboard import DashboardManager
+#from dashboard.dashboard import DashboardManager
 from config.courses import COURSES_BY_CATEGORY, RESUME_VIDEOS, INTERVIEW_VIDEOS, get_courses_for_role, get_category_for_role
 from config.job_roles import JOB_ROLES
 from config.database import (
