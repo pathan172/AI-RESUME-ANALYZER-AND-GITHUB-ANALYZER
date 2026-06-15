@@ -1433,24 +1433,24 @@ class ResumeApp:
                     if resume_buffer:
                        try:
     # Save resume data to database
-    save_resume_data(resume_data)
+                           save_resume_data(resume_data)
 
     # Offer the resume for download
-    st.success("✅ Resume generated successfully!")
+                           st.success("✅ Resume generated successfully!")
 
     # Show snowflake effect
-    st.snow()
+                           st.snow()
 
-    st.download_button(
-        label="Download Resume 📥",
-        data=resume_buffer,
-        file_name=f"{current_name.replace(' ', '_')}_resume.docx",
-        mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-        on_click=lambda: st.balloons()
-    )
+                           st.download_button(
+                               label="Download Resume 📥",
+                               data=resume_buffer,
+                               file_name=f"{current_name.replace(' ', '_')}_resume.docx",
+                               mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                               on_click=lambda: st.balloons()
+                           )
 
-except Exception as db_error:
-    print(f"Warning: Failed to save to database: {str(db_error)}")
+                      except Exception as db_error:
+                          print(f"Warning: Failed to save to database: {str(db_error)}")
 
     # Still allow download even if database save fails
     st.warning(
