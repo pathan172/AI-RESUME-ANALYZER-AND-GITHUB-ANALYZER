@@ -1461,10 +1461,8 @@ print(f"Warning: Failed to save to database: {str(db_error)}")
                             st.download_button(
                                 label="Download Resume 📥",
                                 data=resume_buffer,
-                                file_name=f"{
-    current_name.replace(
-        ' ', '_')}_resume.docx",
-                                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                                file_name=f"{current_name.replace(' ', '_')}_resume.docx",   
+                             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                                 on_click=lambda: st.balloons()
                             )
                     else:
