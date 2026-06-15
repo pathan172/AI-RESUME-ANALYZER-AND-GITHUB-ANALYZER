@@ -1448,7 +1448,7 @@ class ResumeApp:
                                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                                on_click=lambda: st.balloons()
                            )
-                           except Exception as db_error:
+            except Exception as db_error:
                                print(f"Warning: Failed to save to database: {str(db_error)}")
                                st.warning(
         "⚠️ Resume generated but couldn't be saved to database"
