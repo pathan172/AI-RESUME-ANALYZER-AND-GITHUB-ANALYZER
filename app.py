@@ -1448,7 +1448,8 @@ class ResumeApp:
                                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                                on_click=lambda: st.balloons()
                            )
-except Exception as db_error:
+                           
+                        except Exception as db_error:
                                print(f"Warning: Failed to save to database: {str(db_error)}")
                                st.warning(
         "⚠️ Resume generated but couldn't be saved to database"
@@ -1463,23 +1464,6 @@ except Exception as db_error:
         mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
         on_click=lambda: st.balloons()
     )
-                        except Exception as db_error:
-                               print(f"Warning: Failed to save to database: {str(db_error)}")
-                      
-                            # Still allow download even if database save fails
-                            st.warning(
-                                "⚠️ Resume generated but couldn't be saved to database")
-                            
-                            # Show balloons effect
-                            st.balloons()
-
-                            st.download_button(
-                                label="Download Resume 📥",
-                                data=resume_buffer,
-                               file_name=f"{current_name.replace(' ', '_')}_resume.docx",   
-                             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                                on_click=lambda: st.balloons()
-                            )
                     else:
                         st.error(
                             "❌ Failed to generate resume. Please try again.")
