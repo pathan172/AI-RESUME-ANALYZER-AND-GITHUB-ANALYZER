@@ -5,7 +5,7 @@ import re
 import time
 from collections import Counter
 from PIL import Image
-#from jobs.job_search import render_job_search
+from jobs.job_search import render_job_search
 from datetime import datetime
 from ui_components import (
     apply_modern_styles, hero_section, feature_card,
